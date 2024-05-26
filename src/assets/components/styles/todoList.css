@@ -1,48 +1,57 @@
+/* Estilos generales */
 body {
     font-family: sans-serif;
 }
 
-h1 {
+/* Estilos para el componente TodoList */
+.todoList {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todoList h1 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-#agregarTarea, #eiminarTarea {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-#nuevaTarea {
-    flex: 1;
+.todoList input[type="text"] {
+    width: 95%;
     padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-#agregarTarea button {
-    padding: 10px 15px;
-    background-color: #007bff;
+.todoList button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    cursor: pointer;
-}
-#eiminarTarea button {
-    padding: 10px 15px;
-    background-color: rgb(155, 40, 40);
-    color: white;
-    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-#listaTareas {
+.todoList ul {
     list-style: none;
     padding: 0;
 }
 
-#listaTareas li {
-    padding: 10px;
+.todoList li {
+    margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
+    padding: 10px;
 }
 
-#listaTareas li.completada {
-    text-decoration: line-through;
+.todoList li button {
+    float: right;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
