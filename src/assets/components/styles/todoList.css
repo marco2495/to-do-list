@@ -1,6 +1,8 @@
 /* Estilos generales */
 body {
     font-family: sans-serif;
+    background-color: #F5F5F5;
+    /* Fondo gris claro */
 }
 
 /* Estilos para el componente TodoList */
@@ -8,31 +10,49 @@ body {
     width: 500px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E0E0E0;
+    /* Bordes suaves */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    background-color: #FFFFFF;
+    /* Fondo blanco */
 }
 
 .todoList h1 {
     text-align: center;
     margin-bottom: 20px;
+    color: #333333;
+    /* Texto gris oscuro */
 }
 
 .todoList input[type="text"] {
     width: 95%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #E0E0E0;
+    /* Bordes suaves */
     border-radius: 5px;
+    /* Bordes redondeados */
 }
 
 .todoList button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #28A745;
+    /* Botón verde */
     color: white;
     border: none;
     border-radius: 5px;
+    /* Bordes redondeados */
     cursor: pointer;
+    margin-right: 10px;
+    /* Espacio entre botones */
+}
+
+.todoList button:hover {
+    background-color: #218838;
+    /* Color verde más oscuro al pasar el mouse */
 }
 
 .todoList ul {
@@ -42,16 +62,32 @@ body {
 
 .todoList li {
     margin-bottom: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #E0E0E0;
+    /* Bordes suaves */
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todoList li p {
+    margin: 0;
+    color: #333333;
+    /* Texto gris oscuro */
 }
 
 .todoList li button {
-    float: right;
     padding: 5px 10px;
-    background-color: #f44336;
+    background-color: #DC3545;
+    /* Botón rojo */
     color: white;
     border: none;
     border-radius: 5px;
+    /* Bordes redondeados */
     cursor: pointer;
+}
+
+.todoList li button:hover {
+    background-color: #C82333;
+    /* Color rojo más oscuro al pasar el mouse */
 }
